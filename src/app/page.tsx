@@ -31,7 +31,7 @@ export default function Home() {
           <section id="thinking">
             <h3 className="text-2xl font-bold mb-4">Top of mind</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-600">
-              <li>The future of software development, startups, and IP (wip)</li>
+              <li><Link href="/writing/the-exit-calculus" className="underline">The Exit Calculus: Re-pricing Startups in the Age of AI</Link></li>
               <li>Building differentiated AI products, selling, and competing with BigTech (wip)</li>
               <li>Tools of leverage in 2025, Capital vs. Software (wip)</li>
               <li><Link href="/writing/ai-in-private-equity" className="underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link></li>
@@ -60,6 +60,7 @@ export default function Home() {
           <section id="writing">
             <h3 className="text-2xl font-bold mb-4">Writing</h3>
             <div className="space-y-2">
+                <Link href="/writing/the-exit-calculus" className="block hover:underline">The Exit Calculus: Re-pricing Startups in the Age of AI</Link>
                 <Link href="/writing/ai-in-private-equity" className="block hover:underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link>
             </div>
           </section>
