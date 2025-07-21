@@ -16,7 +16,7 @@ export default async function WritingPage({
   params: Promise<{ slug: string }> 
 }) {
   const resolvedParams = await params;
-  const post = await getPostBySlug(resolvedParams.slug);
+  const post = await getPostBySlug(resolvedParams.slug) as any;
 
   if (!post) {
     notFound();
@@ -29,6 +29,8 @@ export default async function WritingPage({
           <Link href="/" className="text-gray-600 hover:text-black transition-colors">
             &larr; Back to home
           </Link>
+          <h1 className="text-4xl font-bold mt-4">{post.title}</h1>
+          <p className="text-gray-500 mt-2">{post.date}</p>
         </header>
         <main>
           <article 

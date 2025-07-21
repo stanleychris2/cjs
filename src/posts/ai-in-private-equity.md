@@ -1,4 +1,7 @@
-# The End of Software Scarcity: How AI Is Reshaping Private Equity
+---
+title: 'On AI, Software Scarcity, and Private Equity'
+date: '2024-07-20'
+---
 
 In technology, leverage compounds where scarcity exists. For the last two decades, software was scarce. It was expensive to build, hard to distribute, and even harder to maintain. This scarcity created enormous opportunity—for founders, investors, and especially for private equity.
 
@@ -81,7 +84,7 @@ Instead, moats shift to:
 * **Workflow Depth**: Integration into critical, non-trivial processes that are hard to rip out.
 * **Brand and Trust**: Especially in vertical markets where risk aversion is high.
 
-This means PE diligence must refocus from technical depth to **contextual advantage**. Who owns the user journey? Who collects irreplaceable data? Who operates at the point of decision?
+This means PE diligence must refocus from technical depth to **contextual advantage**. Who owns the user journey? Who collects irreplaceable data? Who operates at the point of decision? Is the product a feature, or the system of record?
 
 ---
 
@@ -95,21 +98,19 @@ AI-native development allows acquirers to:
 * Spin up adjacent modules internally,
 * Integrate functionality faster than post-merger replatforming would allow.
 
-This raises a new question for every acquisition: **is this asset unique, or just early?** If it’s the latter, PE firms may be better off building than bidding.
+This raises a new question for every acquisition: **is this asset unique, or just early?** For example, why acquire a small company for its AI-powered contract analysis feature when an in-house agent, trained on your firm’s proprietary legal data, could perform the same task with greater context and accuracy? If an asset’s core value can be replicated by an agent, PE firms may be better off building than bidding.
 
 ---
 
 ### 3. Operational Value Creation Gets Rewritten
 
-Private equity thrives on post-acquisition optimization. AI creates new surface area for operational leverage.
+Private equity thrives on post-acquisition optimization. The mandate for operational improvement is supercharged. An AI-native PE firm won't just advise; it will deploy.
 
-Firms can:
+* **Portfolio-wide Automation**: Imagine deploying a universal agent for customer support or financial reporting across all portfolio companies, creating immediate, scaled efficiency.
+* **Internal Development Revolution**: Expensive outsourced development can be replaced by small, in-house teams armed with AI copilots, building and iterating at a fraction of the cost.
+* **Real-time Intelligence**: Gone are the days of waiting for quarterly reports. Prompt-based monitoring allows for real-time KPI tracking and operational oversight.
 
-* Deploy agents across portfolios to automate support, onboarding, and internal ops,
-* Replace outsourced development with AI copilots,
-* Use prompt-based reporting and monitoring for real-time KPI tracking.
-
-This isn’t theoretical. The AI-native PE firm will have faster reporting cycles, lower SG&A, and tighter control across its holdings.
+This isn’t a theoretical advantage. It is a direct assault on SG&A, leading to faster reporting cycles and tighter control across the portfolio.
 
 ---
 
@@ -137,19 +138,19 @@ Firms should target companies with:
 * Domain-specific structured inputs,
 * Feedback loops that improve accuracy or recommendations.
 
-These are hard to replicate and essential to AI performance. They represent the **new compounding asset**.
+These are hard to replicate and essential to AI performance. Consider a vertical SaaS for dentistry: while a competitor can clone its scheduling features overnight, they cannot replicate years of patient dental records. That historical data is the fuel for predictive models that a new entrant simply cannot build. This is the **new compounding asset**.
 
 ### 2. Workflow Integration
 
 SaaS companies that are deeply embedded in vertical workflows (e.g., practice management for dentists, field service dispatching, EHR integrations) retain switching costs that are meaningful.
 
-Ownership of process > ownership of features.
+Think of compliance software so deeply tied into a bank's core transaction systems that removing it would require a multi-year, multi-million dollar overhaul. That is a moat. **Ownership of process > ownership of features.**
 
 ### 3. Distribution Access
 
 Companies with privileged channels—whether through embedded sales, regulatory advantages, or strategic partnerships—are insulated from supply-side competition.
 
-In a commoditized market, distribution becomes the kingmaker.
+A healthcare software provider that has spent a decade securing exclusive integrations with the top three Electronic Health Record (EHR) systems holds a distribution channel that is nearly impossible for a new competitor to replicate. **In a commoditized market, distribution becomes the kingmaker.**
 
 ---
 
@@ -157,18 +158,18 @@ In a commoditized market, distribution becomes the kingmaker.
 
 Private equity thrives when it identifies and exploits underpriced assets or under-optimized operations. The new wave of opportunities will not come from acquiring traditional SaaS businesses at lower multiples.
 
-It will come from:
+It will come from a new, more hands-on playbook:
 
-* **Replatforming old software businesses with AI-native tooling**,
-* **Building new vertical modules internally instead of acquiring them**,
-* **Owning data infrastructure and process automation in legacy sectors**,
-* **Creating shared distribution platforms across portfolios**.
+* **Aggressive Replatforming**: Buying legacy software not for its code, but for its customer base, and aggressively replatforming it with AI-native tooling.
+* **Internal Venture Building**: Building new vertical modules and even entire companies internally, leveraging portfolio data and shared AI infrastructure.
+* **Infrastructure Plays**: Acquiring the data and process automation layers in legacy sectors, effectively owning the "rails" on which future AI services will run.
+* **Portfolio as a Platform**: Creating shared distribution and data platforms that give all portfolio companies an unfair advantage.
 
-This is not a small shift. It is a new mandate.
+This is not a small shift. It is a new mandate: from optimizing assets to building them.
 
 ---
 
-## Conclusion: The PE Firm of the Future
+## The PE Firm of the Future
 
 The most valuable private equity firms of the next decade will not be those who pay the highest multiples or hire the best consultants. They will be the firms that:
 

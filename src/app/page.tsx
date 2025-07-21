@@ -6,24 +6,22 @@ export default function Home() {
       <div className="w-full max-w-2xl mx-auto p-8">
         <header className="flex justify-between items-center py-8">
           <h1 className="text-2xl font-bold">Chris Stanley</h1>
-          <nav className="flex space-x-4">
-            <Link href="/about" className="hover:underline">About</Link>
-            <Link href="/projects" className="hover:underline">Projects</Link>
-            <Link href="/writing" className="hover:underline">Writing</Link>
-          </nav>
         </header>
 
         <main className="space-y-16">
           <section id="about">
             <p className="mt-4 text-lg">
-              I'm based in San Francisco and am currently the founder of an AI startup, Patterns, building deep research agents for private equity investing.
+              I'm based in San Francisco and am currently the founder of an AI startup, <a href="https://patterns.app/" target="_blank" rel="noopener noreferrer" className="underline">Patterns</a>, building research agents for private equity investing.
             </p>
             <div className="space-y-4 text-gray-600 mt-4">
               <p>
-                Before Patterns I founded a marketplace, Scope, (<a href="https://www.scopeinc.com/blog/announcing-our-2-25m-series-seed" target="_blank" rel="noopener noreferrer" className="underline">link</a>) and was an early employee at fintech Cover (<a href="https://techcrunch.com/2018/10/02/cover-insurance/" target="_blank" rel="noopener noreferrer" className="underline">link</a>) startups. In 2016, I joined the business operations team at Square (nee Block) to help scale risk and fraud detection systems, and in 2011 I started my career as a sell-side investment banker at Nomura Securities, covering hedge funds for fixed income products.
+                Before Patterns I founded a marketplace, <a href="https://www.scopeinc.com/blog/announcing-our-2-25m-series-seed" target="_blank" rel="noopener noreferrer" className="underline">Scope</a> and was an early employee at fintech <a href="https://techcrunch.com/2018/10/02/cover-insurance/" target="_blank" rel="noopener noreferrer" className="underline">Cover</a>. In 2016, I joined the business operations team at Square (<a href="http://block.xyz/" target="_blank" rel="noopener noreferrer" className="underline">Block</a>) to help scale risk and fraud detection systems, and in 2011 I started my career as a sell-side investment banker at Nomura Securities, covering hedge funds for fixed income products.
               </p>
               <p>
-                I went to Yale where I doubled majored in economics and psychology, and started on the varsity football and track and field teams - <a href="https://www.nhregister.com/news/article/YALE-Despite-his-track-record-Stanley-s-a-11605894.php" target="_blank" rel="noopener noreferrer" className="underline">link</a>
+                I went to Yale where I majored in economics and psychology, and started on the varsity football and track and field teams. 
+              </p>
+              <p>
+                I write to explore my ideas and meet interesting people. Connect with me on <a href="https://www.linkedin.com/in/chris-stanley/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a> or email me at <a href="mailto:chris@patterns.app" className="underline">chris@patterns.app</a>.
               </p>
             </div>
           </section>
@@ -31,16 +29,15 @@ export default function Home() {
           <section id="thinking">
             <h3 className="text-2xl font-bold mb-4">Top of mind</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-600">
-              <li><Link href="/writing/the-exit-calculus" className="underline">The Exit Calculus: Re-pricing Startups in the Age of AI</Link></li>
-              <li>Building differentiated AI products, selling, and competing with BigTech (wip)</li>
-              <li>Tools of leverage in 2025, Capital vs. Software (wip)</li>
-              <li><Link href="/writing/ai-in-private-equity" className="underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link></li>
-              <li>Patterns, from data orchestration to private market investing (link)</li>
+              <li><Link href="/writing/software-startups-ip" className="underline">On Software, Startups, and IP in 2025</Link></li>
+              <li><Link href="/writing/differentiated-ai-products-2025" className="underline">Building differentiated AI products in 2025</Link></li>
+              <li><Link href="/writing/ai-in-private-equity" className="underline">On AI, Software Scarcity, and Private Equity</Link></li>
+              <li>Patterns, from data orchestration to private market investing(wip)</li>
             </ul>
           </section>
 
           <section id="projects">
-            <h3 className="text-2xl font-bold mb-4">Projects & Content</h3>
+            <h3 className="text-2xl font-bold mb-4">Projects</h3>
             <div className="space-y-4">
               <div>
                 <h4 className="font-bold">The UpTrade</h4>
@@ -60,8 +57,9 @@ export default function Home() {
           <section id="writing">
             <h3 className="text-2xl font-bold mb-4">Writing</h3>
             <div className="space-y-2">
-                <Link href="/writing/the-exit-calculus" className="block hover:underline">The Exit Calculus: Re-pricing Startups in the Age of AI</Link>
-                <Link href="/writing/ai-in-private-equity" className="block hover:underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link>
+                <Link href="/writing/differentiated-ai-products-2025" className="block hover:underline">Building Differentiated AI Products in 2025</Link>
+                <Link href="/writing/software-startups-ip" className="block hover:underline">On Software, Startups, and IP in 2025 </Link>
+                <Link href="/writing/ai-in-private-equity" className="block hover:underline">On AI, Software Scarcity, and Private Equity</Link>
             </div>
           </section>
 
@@ -79,9 +77,7 @@ export default function Home() {
           </section>
         </main>
 
-        <footer className="text-center py-16 text-gray-500">
-          <p>&copy; 2024 Chris Stanley</p>
-        </footer>
+        
       </div>
     </div>
   );
