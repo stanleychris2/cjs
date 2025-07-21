@@ -12,7 +12,7 @@ export default function Projects() {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-bold">The UpTrade</h2>
-              <p className="text-gray-600 mt-2">In 2014 I taught myself how to code and build "Reddit for Finance" before r/wallstreetbets was a thing. <a href="https://github.com/stanleychris2/theuptrade" target="_blank" rel="noopener noreferrer" className="underline">See on GitHub</a>.</p>
+              <p className="text-gray-600 mt-2">In 2014 I taught myself how to code and build &quot;Reddit for Finance&quot; before r/wallstreetbets was a thing. <a href="https://github.com/stanleychris2/theuptrade" target="_blank" rel="noopener noreferrer" className="underline">See on GitHub</a>.</p>
             </div>
             <div>
               <h2 className="text-2xl font-bold">FurnishUp</h2>

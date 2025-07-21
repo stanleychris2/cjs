@@ -25,7 +25,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       date: data.date,
       content: htmlContent,
     };
-  } catch (error) {
+  } catch {
     return null;
   }
 }

@@ -16,7 +16,7 @@ export default async function WritingPage({
   params: Promise<{ slug: string }> 
 }) {
   const resolvedParams = await params;
-  const post = await getPostBySlug(resolvedParams.slug) as any;
+  const post = await getPostBySlug(resolvedParams.slug);
 
   if (!post) {
     notFound();

@@ -11,7 +11,7 @@ export default function Home() {
         <main className="space-y-16">
           <section id="about">
             <p className="mt-4 text-lg">
-              I'm based in San Francisco and am currently the founder of an AI startup, <a href="https://patterns.app/" target="_blank" rel="noopener noreferrer" className="underline">Patterns</a>, building research agents for private equity investing.
+              I&apos;m based in San Francisco and am currently the founder of an AI startup, <a href="https://patterns.app/" target="_blank" rel="noopener noreferrer" className="underline">Patterns</a>, building research agents for private equity investing.
             </p>
             <div className="space-y-4 text-gray-600 mt-4">
               <p>
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="space-y-4">
               <div>
                 <h4 className="font-bold">The UpTrade</h4>
-                <p className="text-gray-600">In 2014 I taught myself how to code and build "Reddit for Finance" before r/wallstreetbets was a thing. <a href="https://github.com/stanleychris2/theuptrade" target="_blank" rel="noopener noreferrer" className="underline">See on GitHub</a>.</p>
+                <p className="text-gray-600">In 2014 I taught myself how to code and build &quot;Reddit for Finance&quot; before r/wallstreetbets was a thing. <a href="https://github.com/stanleychris2/theuptrade" target="_blank" rel="noopener noreferrer" className="underline">See on GitHub</a>.</p>
               </div>
               <div>
                 <h4 className="font-bold">FurnishUp</h4>
