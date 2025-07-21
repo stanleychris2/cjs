@@ -1,103 +1,87 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="bg-white text-black min-h-screen font-sans">
+      <div className="w-full max-w-2xl mx-auto p-8">
+        <header className="flex justify-between items-center py-8">
+          <h1 className="text-2xl font-bold">Chris Stanley</h1>
+          <nav className="flex space-x-4">
+            <Link href="/about" className="hover:underline">About</Link>
+            <Link href="/projects" className="hover:underline">Projects</Link>
+            <Link href="/writing" className="hover:underline">Writing</Link>
+          </nav>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <main className="space-y-16">
+          <section id="about">
+            <p className="mt-4 text-lg">
+              I'm based in San Francisco and am currently the founder of an AI startup, Patterns, building deep research agents for private equity investing.
+            </p>
+            <div className="space-y-4 text-gray-600 mt-4">
+              <p>
+                Before Patterns I founded a marketplace, Scope, (<a href="https://www.scopeinc.com/blog/announcing-our-2-25m-series-seed" target="_blank" rel="noopener noreferrer" className="underline">link</a>) and was an early employee at fintech Cover (<a href="https://techcrunch.com/2018/10/02/cover-insurance/" target="_blank" rel="noopener noreferrer" className="underline">link</a>) startups. In 2016, I joined the business operations team at Square (nee Block) to help scale risk and fraud detection systems, and in 2011 I started my career as a sell-side investment banker at Nomura Securities, covering hedge funds for fixed income products.
+              </p>
+              <p>
+                I went to Yale where I doubled majored in economics and psychology, and started on the varsity football and track and field teams - <a href="https://www.nhregister.com/news/article/YALE-Despite-his-track-record-Stanley-s-a-11605894.php" target="_blank" rel="noopener noreferrer" className="underline">link</a>
+              </p>
+            </div>
+          </section>
+
+          <section id="thinking">
+            <h3 className="text-2xl font-bold mb-4">Top of mind</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-600">
+              <li>The future of software development, startups, and IP (wip)</li>
+              <li>Building differentiated AI products, selling, and competing with BigTech (wip)</li>
+              <li>Tools of leverage in 2025, Capital vs. Software (wip)</li>
+              <li><Link href="/writing/ai-in-private-equity" className="underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link></li>
+              <li>Patterns, from data orchestration to private market investing (link)</li>
+            </ul>
+          </section>
+
+          <section id="projects">
+            <h3 className="text-2xl font-bold mb-4">Projects & Content</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-bold">The UpTrade</h4>
+                <p className="text-gray-600">In 2014 I taught myself how to code and build "Reddit for Finance" before r/wallstreetbets was a thing. <a href="https://github.com/stanleychris2/theuptrade" target="_blank" rel="noopener noreferrer" className="underline">See on GitHub</a>.</p>
+              </div>
+              <div>
+                <h4 className="font-bold">FurnishUp</h4>
+                <p className="text-gray-600">My first startup, FurnishUp is an online platform for visualizing and arranging furniture in a virtual 3D interior space. Open-sourced as <a href="https://github.com/furnishup/blueprint3d" target="_blank" rel="noopener noreferrer" className="underline">Blueprint3D</a>.</p>
+              </div>
+              <div>
+                <h4 className="font-bold">Tour de Fox</h4>
+                <p className="text-gray-600">In 3 months we traveled to all 48 contiguous states where we climbed to the highest point in every state, cycled between the base of the mountains, held over 30 fundraising events, and raised over $2mm. The project lives on an an annual fundraiser for the Michael J. Fox foundation. <a href="https://www.youtube.com/@tourdefox2126" target="_blank" rel="noopener noreferrer" className="underline">Watch on YouTube</a></p>
+              </div>
+            </div>
+          </section>
+          
+          <section id="writing">
+            <h3 className="text-2xl font-bold mb-4">Writing</h3>
+            <div className="space-y-2">
+                <Link href="/writing/ai-in-private-equity" className="block hover:underline">The End of Software Scarcity: How AI Is Reshaping Private Equity</Link>
+            </div>
+          </section>
+
+          <section id="reading">
+            <h3 className="text-2xl font-bold mb-4">Reading and Listening</h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-600">
+              <li><a href="https://www.citriniresearch.com/" target="_blank" rel="noopener noreferrer" className="underline">Citrini</a></li>
+              <li><a href="https://stratechery.com/" target="_blank" rel="noopener noreferrer" className="underline">Stratechery</a></li>
+              <li><a href="https://www.bloomberg.com/account/newsletters/money-stuff" target="_blank" rel="noopener noreferrer" className="underline">Money Stuff</a></li>
+              <li><a href="https://www.astralcodexten.com/" target="_blank" rel="noopener noreferrer" className="underline">Astral Codex 10</a></li>
+              <li><a href="https://www.thealgorithmicbridge.com/" target="_blank" rel="noopener noreferrer" className="underline">The Algorithmic Bridge</a></li>
+              <li><a href="https://cloudedjudgement.substack.com/" target="_blank" rel="noopener noreferrer" className="underline">Clouded Judgement</a></li>
+              <li><a href="https://www.fabricatedknowledge.com/" target="_blank" rel="noopener noreferrer" className="underline">Fabricated Knowledge</a></li>
+            </ul>
+          </section>
+        </main>
+
+        <footer className="text-center py-16 text-gray-500">
+          <p>&copy; 2024 Chris Stanley</p>
+        </footer>
+      </div>
     </div>
   );
 }
