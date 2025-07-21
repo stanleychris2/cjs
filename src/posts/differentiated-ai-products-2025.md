@@ -1,6 +1,6 @@
 ---
 title: 'Building Differentiated AI Products in 2025'
-date: '2024-07-26'
+date: '2025-07-21'
 image: '/ai-value.png'
 ---
 

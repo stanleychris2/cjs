@@ -1,6 +1,6 @@
 ---
 title: 'On AI, Software Scarcity, and Private Equity'
-date: '2024-07-20'
+date: '2025-07-20'
 ---
 
 In technology, leverage compounds where scarcity exists. For the last two decades, software was scarce. It was expensive to build, hard to distribute, and even harder to maintain. This scarcity created enormous opportunity—for founders, investors, and especially for private equity.

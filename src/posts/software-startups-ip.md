@@ -1,6 +1,6 @@
 ---
 title: 'On Software, Startups, and IP in 2025'
-date: '2024-07-15'
+date: '2025-07-15'
 ---
 
 A significant shift is happening to the concept of software as intellectual property. We're watching, in real-time, as the thing that once defined value in our industry—the unique, proprietary code—becomes something closer to a commodity. This isn't just a technical change; it's a strategic one for anyone building software companies.
