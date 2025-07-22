@@ -6,6 +6,9 @@ export default function Home() {
       <div className="w-full max-w-2xl mx-auto p-8">
         <header className="flex justify-between items-center py-8">
           <h1 className="text-2xl font-bold">Chris Stanley</h1>
+          <nav>
+            <Link href="/resume" className="hover:underline">Resume</Link>
+          </nav>
         </header>
 
         <main className="space-y-16">

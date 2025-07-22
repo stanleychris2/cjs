@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +7,7 @@ const resume = {
   summary:
     "A founder with 15+ years of experience at the intersection of data science, finance, and product. Currently building Patterns, an agentic research platform that gives private equity and finance teams a decisive edge by automating market research, financial modeling, and due diligence.",
   about:
-    "From design to code to sales, I'm a versatile builder who is most effective at the product level: talking to customers, designing solutions, and working with engineers. In 2022, I was captivated by LLMs and have since shipped multiple AI products at Patterns. I'm driven by the real-world application of AI and building products that integrate it into the fabric of a business. I thrive in small, high-leverage teams pushing the frontier of AI-enabled product development.",
+    "From design to code to sales, I'm a versatile builder who is most effective at the product level: talking to customers, designing solutions, and working with engineers. In 2022, I was captivated by LLMs and have since shipped multiple AI products at Patterns. I'm driven by the real-world application of AI and building products that integrate it into the fabric of a business. I thrive in small, high-leverage teams pushing the frontier of AI-first business building, from product development to sales and marketing.",
   experience: [
     {
       company: "Patterns",
@@ -18,7 +19,7 @@ const resume = {
         "Started Patterns to enable ops teams to build and deploy internal data apps 10x faster via pre-built connectors, a low-code interface, and templated intelligence kits (e.g., ETL pipelines, ML models).",
         "In Nov 2022, pivoted to orchestrating LLM tasks and launched our first product, an agent builder, on HackerNews the same day as ChatGPT's release.",
         "Refined the product to focus on text-to-SQL agents, selling self-service analytics to finance and ops teams.",
-        "In 2024, pivoted to private market research, building an advanced research agent with capabilities for web research, Excel modeling, database querying, and statistical reasoning.",
+        "In 2024, pivoted to private market research, building an advanced research agent with capabilities for web research, python via jupyter notebooks, Excel editing, and database querying.",
       ],
     },
     {
@@ -29,7 +30,7 @@ const resume = {
       location: "San Francisco Bay Area",
       description: [
         "Co-founded Scope, an expert network platform that enabled software companies to build and manage expert networks for their products and customers.",
-        "Scoped and implemented over 100 mid-market software integration solutions for leading providers like Plaid, Square, and Shippo across logistics, revenue operations, and finance.",
+        "Scoped and implemented 100+ software integration solutions for leading providers like Plaid, Square, and Shippo across logistics, revenue operations, and finance.",
       ],
     },
     {
@@ -98,86 +99,112 @@ const resume = {
   ],
 };
 
-function ResumePage() {
+export default function ResumePage() {
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
-    <div className="bg-white text-black min-h-screen font-sans">
-      <div className="w-full max-w-4xl mx-auto p-8">
-        <header className="py-8">
-          <Link href="/" className="hover:underline">
-            &larr; Back to home
-          </Link>
-        </header>
-        <main className="space-y-12">
-          <div>
-            <h1 className="text-5xl font-bold">{resume.name}</h1>
-            <p className="mt-4 text-lg text-gray-700">{resume.summary}</p>
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold border-b pb-2">About</h2>
-            <p className="mt-4 text-lg text-gray-700">{resume.about}</p>
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold border-b pb-2">Experience</h2>
-            <div className="mt-8 space-y-12">
-              {resume.experience.map((job, index) => (
-                <div key={index} className="flex space-x-6">
-                  <div className="flex-shrink-0">
-                    {job.logo ? (
-                      <Image
-                        src={job.logo}
-                        alt={`${job.company} logo`}
-                        width={48}
-                        height={48}
-                        className="rounded-md"
-                      />
-                    ) : (
-                      <div className="w-12 h-12 bg-gray-200 rounded-md"></div>
-                    )}
-                  </div>
-                  <div className="flex-grow">
-                    <h3 className="text-2xl font-semibold">{job.company}</h3>
-                    <p className="text-lg text-gray-600">{job.title}</p>
-                    <p className="text-sm text-gray-500">
-                      {job.dates} &middot; {job.location}
-                    </p>
-                    <div className="mt-4 text-gray-700 space-y-2">
-                      {Array.isArray(job.description) ? (
-                        <ul className="list-disc list-inside space-y-2">
-                          {job.description.map((item, i) => {
-                            const hnLink =
-                              "https://news.ycombinator.com/item?id=33801314";
-                            if (item.includes(hnLink)) {
-                              const parts = item.split(hnLink);
-                              return (
-                                <li key={i}>
-                                  {parts[0]}
-                                  <a
-                                    href={hnLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="underline"
-                                  >
-                                    {hnLink}
-                                  </a>
-                                  {parts[1]}
-                                </li>
-                              );
-                            }
-                            return <li key={i}>{item}</li>;
-                          })}
-                        </ul>
+    <>
+      <style jsx global>{`
+        @media print {
+          body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          @page {
+            margin: 0.5in;
+          }
+          .no-print {
+            display: none !important;
+          }
+        }
+      `}</style>
+      <div className="bg-white text-black min-h-screen font-sans">
+        <div className="w-full max-w-4xl mx-auto p-8">
+          <header className="py-8 flex justify-between items-center no-print">
+            <Link href="/" className="hover:underline">
+              &larr; Back to home
+            </Link>
+            <button
+              onClick={handlePrint}
+              className="hover:underline"
+            >
+              pdf
+            </button>
+          </header>
+          <main className="space-y-12">
+            <div>
+              <h1 className="text-5xl font-bold">{resume.name}</h1>
+              <p className="mt-4 text-lg text-gray-700">{resume.summary}</p>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold border-b pb-2">About</h2>
+              <p className="mt-4 text-lg text-gray-700">{resume.about}</p>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold border-b pb-2">Experience</h2>
+              <div className="mt-8 space-y-12">
+                {resume.experience.map((job, index) => (
+                  <div key={index} className="flex space-x-6">
+                    <div className="flex-shrink-0">
+                      {job.logo ? (
+                        <Image
+                          src={job.logo}
+                          alt={`${job.company} logo`}
+                          width={48}
+                          height={48}
+                          className="rounded-md"
+                        />
                       ) : (
-                        <p>{job.description}</p>
+                        <div className="w-12 h-12 bg-gray-200 rounded-md"></div>
                       )}
                     </div>
+                    <div className="flex-grow">
+                      <h3 className="text-2xl font-semibold">{job.company}</h3>
+                      <p className="text-lg text-gray-600">{job.title}</p>
+                      <p className="text-sm text-gray-500">
+                        {job.dates} &middot; {job.location}
+                      </p>
+                      <div className="mt-4 text-gray-700 space-y-2">
+                        {Array.isArray(job.description) ? (
+                          <ul className="list-disc list-inside space-y-2">
+                            {job.description.map((item, i) => {
+                              const hnLink =
+                                "https://news.ycombinator.com/item?id=33801314";
+                              if (item.includes(hnLink)) {
+                                const parts = item.split(hnLink);
+                                return (
+                                  <li key={i}>
+                                    {parts[0]}
+                                    <a
+                                      href={hnLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="underline"
+                                    >
+                                      {hnLink}
+                                    </a>
+                                    {parts[1]}
+                                  </li>
+                                );
+                              }
+                              return <li key={i}>{item}</li>;
+                            })}
+                          </ul>
+                        ) : (
+                          <p>{job.description}</p>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -199,6 +226,4 @@ if (patternsJob) {
       index
     ] = `In Nov 2022, pivoted to orchestrating LLM tasks and launched our first product, an agent builder, on HackerNews the same day as ChatGPT's release.`;
   }
-}
-
-export default ResumePage; 
+} 
