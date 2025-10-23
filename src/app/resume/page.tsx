@@ -5,62 +5,102 @@ import Link from "next/link";
 const resume = {
   name: "Chris Stanley",
   summary:
-    "A founder with 15+ years of experience at the intersection of data science, finance, and product. Currently building Patterns, an agentic research platform that gives private equity and finance teams a decisive edge by automating market research, financial modeling, and due diligence.",
+    "Technical operator and founder with 15 years building intelligent data systems and AI products that automate and augment decision-making. I ship end-to-end across code, design, GTM, and leadership. Focused on driving AI adoption and measurable business impact in the enterprise.",
+  contact: {
+    location: "San Francisco, CA",
+    phone: "(310) 405-4043",
+    email: "stanleychris2@gmail.com",
+    website: "chrisstanley.xyz",
+  },
   about:
-    "From design to code to sales, I'm a versatile builder who is most effective at the product level: talking to customers, designing solutions, and working with engineers. In 2022, I was captivated by LLMs and have since shipped multiple AI products at Patterns. I'm driven by the real-world application of AI and building products that integrate it into the fabric of a business. I thrive in small, high-leverage teams pushing the frontier of AI-first business building, from product development to sales and marketing.",
+    "",
+  skills: [
+    "Executive leadership: fundraising, planning, investor comms; OKRs, KPI cadence, reporting",
+    "Systems architecture: automate manual ops into reliable, auditable workflows for finance, risk, sales",
+    "Product management: customer discovery, business case validation, iterative roadmap",
+    "Full-stack builder: Python, TypeScript/Node.js, SQL; data pipelines (Airflow, dbt, Snowflake/BigQuery)",
+    "Analytics & BI: self-serve dashboards and automated reporting that drive decisions",
+    "Applied ML: problem framing, model development/evaluation, safe deployment",
+    "LLM/agents: agentic workflows, retrieval, evals, prompt design, custom tools/integrations",
+    "Risk & compliance: SOC 2, GDPR; data security, privacy, governance",
+  ],
+  education: [
+    {
+      school: "Yale University",
+      logo: "/yale.png",
+      degree: "B.A.",
+      field: "Economics and Psychology",
+      dates: "2007 - 2011",
+      location: "New Haven, CT",
+      papers: [
+        "A Risky Paradigm: An Evaluation of Risk and Decision-Making in American Society",
+        "Technology and Financial Market Evolution",
+        "Economics, Psychology, and Theory: An Analysis of the Historical Relationship Between Economics and Psychology",
+      ],
+      coursework: ["Statistics", "Psychology", "Game Theory"],
+      activities: [
+        "Berkeley College (Residential College); Varsity Football (Cornerback); Varsity Track & Field (100m, 200m, 4x100, 4x400); DMR school record holder",
+      ],
+    },
+    {
+      school: "Loyola High School, Los Angeles",
+      logo: "/loyola.png",
+      degree: "High School Diploma",
+      field: "",
+      dates: "2003 - 2007",
+      location: "Los Angeles, CA",
+    },
+  ],
   experience: [
     {
       company: "Patterns",
-      logo: "/patterns_data_logo.jpeg",
+      logo: "/patterns.png",
       title: "Founder",
-      dates: "May 2021 - Present",
+      dates: "2021 - Present",
       location: "San Francisco Bay Area",
       description: [
-        "Started Patterns to enable ops teams to build and deploy internal data apps 10x faster via pre-built connectors, a low-code interface, and templated intelligence kits (e.g., ETL pipelines, ML models).",
-        "In Nov 2022, pivoted to orchestrating LLM tasks and launched our first product, an agent builder, on HackerNews the same day as ChatGPT's release.",
-        "Refined the product to focus on text-to-SQL agents, selling self-service analytics to finance and ops teams.",
-        "In 2024, pivoted to private market research, building an advanced research agent with capabilities for web research, python via jupyter notebooks, Excel editing, and database querying.",
+        "Raised $6M and built a low-code AI data automation and insights platform for revenue & finance teams; led a 6-engineer team end-to-end (architecture, UX, delivery).",
+        "Shipped an agentic data/LLM platform: connectors, python/SQL DAG orchestration infrastructure and low-code UI, text-to-SQL agents, LLM powered data reconciliation agents, and solo-dev on most recent finance/research agent for investment banking and PE (web research, Jupyter/Python, Excel, powerpoint, and database querying).",
+        "Launched the first agent builder on HackerNews (https://news.ycombinator.com/item?id=33801314) the day ChatGPT released; iterated with enterprise design partners.",
+        "Owned product, GTM and sales; generated $500k+ lifetime revenue with customers including Crunchbase.",
       ],
     },
     {
       company: "Scope",
       logo: "/scopeinc_logo.jpeg",
-      title: "Co-Founder",
-      dates: "Jun 2019 - Mar 2021",
+      title: "Founder",
+      dates: "2018 - 2020",
       location: "San Francisco Bay Area",
       description: [
-        "Co-founded Scope, an expert network platform that enabled software companies to build and manage expert networks for their products and customers.",
-        "Scoped and implemented 100+ software integration solutions for leading providers like Plaid, Square, and Shippo across logistics, revenue operations, and finance.",
+        "Raised $3M to build a professional services marketplace that helped SaaS companies (e.g., Plaid, Square, Shippo) accelerate time-to-value, retention, and ROI.",
+        "Led a 5-engineer team; built automated requirement intake, scoping, quoting, and expert matching workflows.",
+        "Scoped, quoted, and managed 50+ projects; delivered $400k+ GMV; sold to C-level executives.",
       ],
     },
     {
       company: "Cover",
       logo: "/cover__logo.jpeg",
-      title: "Data Platform and Ops Lead",
-      dates: "Jan 2018 - Feb 2019",
+      title: "Business Operations Lead",
+      dates: "2016 - 2018",
       location: "San Francisco Bay Area",
       description: [
-        "As a Founding Data & Ops Engineer (employee #20), I built the company's analytics and data-engineering stack from the ground up, reporting directly to the CEO.",
-        "Accelerated a $16M fundraise from Tribe Capital, Social Capital, and YC by automating the financial-model pipeline, providing live metrics for the pitch deck and investor data room.",
-        "Served as the primary engineering contact for due-diligence data pulls and KPI validations.",
-        "Architected and implemented a company-wide OKR and metrics framework, enabling real-time progress monitoring for Product, Sales, and Growth teams.",
-        "Engineered and deployed a modern ELT stack (Fivetran, Snowflake, dbt) and Periscope BI, creating over 30 data models and 100+ curated KPI views.",
-        "Shipped a machine-learning service (Python/Scikit-learn) for predictive lead scoring, cutting customer acquisition costs by 18%.",
-        "Automated financial forecasting (P&L, cash-flow, LTV) and designed systems to power employee performance reviews and engagement surveys.",
+        "Engineered a modern ELT stack (Fivetran, Snowflake, dbt) and Periscope BI; created 30+ data models and 100+ curated KPI views for Product, Sales, and Growth.",
+        "Automated financial reporting and forecasting (P&L, cash flow, LTV) and built executive dashboards and cadences.",
+        "Shipped an ML lead-scoring service (Python/Scikit-learn) that reduced CAC by 18%.",
+        "Supported a $16M fundraise (Tribe Capital, Social Capital, YC) by building the deck, data room, and an automated financial-model pipeline with live metrics; primary diligence contact.",
       ],
     },
     {
       company: "Square",
       logo: "/joinsquare_logo.jpeg",
-      title: "Data Engineering, Risk and Finance",
-      dates: "Jan 2016 - Jan 2018",
+      title: "Business Operations, Risk",
+      dates: "2014 - 2018",
       location: "San Francisco Bay Area",
       description: [
-        "Modeled the Risk organization's KPI schema and automated metric computation with ELT pipelines (Python, dbt, Airflow), driving board-level reporting and C-suite analysis.",
-        "Engineered high-throughput pipelines for third-party data, enriching risk-score features and cutting model latency by 40%.",
-        "Built and maintained an operational analytics platform with 20+ ETL jobs, powering 70 Tableau dashboards for daily decision-making across three business units.",
-        "Developed the Risk organization's P&L model from warehouse data to enable dynamic scenario analysis and budget tracking.",
-        "Implemented a feature store and fraud-prediction pipeline, boosting decision precision by 8 percentage points through A/B testing.",
+        "Scaled risk operations post-IPO; implemented Airflow pipelines and Tableau reporting to power real-time risk metrics and agent scorecards across a 100+ person merchant review team.",
+        "Investigated fraud patterns and modeled credit risk to generate machine learning predictive signals/features for transaction risk scoring and fraud detection.",
+        "Led company-wide Plaid integration enabling automated bank account review; partnered with Square Capital to enhance underwriting.",
+        "Built a chargeback predictive model to prioritize chargeback dispute management, saving $850k+/year in operating costs.",
       ],
     },
     {
@@ -72,17 +112,6 @@ const resume = {
       description: [
         "Founded FurnishUp, an online platform for visualizing and arranging furniture in a virtual 3D space to enhance customer engagement and simplify purchase decisions.",
         "Open-sourced the core technology as Blueprint3D.",
-      ],
-    },
-    {
-      company: "The Michael J. Fox Foundation for Parkinson's Research",
-      logo: "/michaeljfoxorg_logo.jpeg",
-      title: "Video Producer - Tour de Fox",
-      dates: "Jun 2014 - Sep 2014",
-      location: "Greater New York City Area",
-      description: [
-        "Produced video content for Tour de Fox, a nationwide fundraising campaign that raised over $2 million in three months.",
-        "Managed logistics, video and still photography, and the production of short films to document a journey across 48 states.",
       ],
     },
     {
@@ -113,15 +142,41 @@ export default function ResumePage() {
             print-color-adjust: exact;
           }
           @page {
-            margin: 0.5in;
+            margin: 0.25in;
           }
           .no-print {
             display: none !important;
           }
+          /* Condense layout for print */
+          .resume-container {
+            padding: 0.25in 0.28in !important;
+            max-width: 100% !important;
+          }
+          .resume-container h1 { font-size: 1.52rem !important; line-height: 1.12 !important; }
+          .resume-container h2 { font-size: 0.92rem !important; line-height: 1.12 !important; }
+          .resume-container h3 { font-size: 0.8rem !important; line-height: 1.12 !important; }
+          .resume-container p,
+          .resume-container li { font-size: 0.7rem !important; line-height: 1.2 !important; }
+          /* Tighten Tailwind space-y utilities when printing */
+          .resume-container .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.9rem !important; }
+          .resume-container .space-y-10 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.8rem !important; }
+          .resume-container .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.45rem !important; }
+          /* Lists */
+          .resume-container ul { margin-left: 0.8rem !important; }
+          .resume-container ul li { margin-top: 0.16rem !important; }
+          /* Logos: force visibility and fixed size for print */
+          .resume-logo, .resume-logo * { visibility: visible !important; opacity: 1 !important; }
+          .resume-logo { width: 24px !important; height: 24px !important; display: inline-block !important; }
+          .resume-logo img { width: 24px !important; height: 24px !important; object-fit: contain !important; }
+          /* Two-column skills for print */
+          .resume-container .skills-list { column-count: 2; column-gap: 1rem; }
+          .resume-container .skills-list li { break-inside: avoid; }
+          /* Limit bullets per experience to 4 on print */
+          .resume-container .experience-bullets li:nth-child(n+5) { display: none !important; }
         }
       `}</style>
       <div className="bg-white text-black min-h-screen font-sans">
-        <div className="w-full max-w-4xl mx-auto p-8">
+        <div className="w-full max-w-4xl mx-auto p-8 resume-container">
           <header className="py-8 flex justify-between items-center no-print">
             <Link href="/" className="hover:underline">
               &larr; Back to home
@@ -136,71 +191,151 @@ export default function ResumePage() {
           <main className="space-y-12">
             <div>
               <h1 className="text-5xl font-bold">{resume.name}</h1>
+          {resume.contact && (
+            <p className="mt-2 text-md text-gray-600">
+              {[resume.contact.location, resume.contact.phone, resume.contact.email, resume.contact.website]
+                .filter(Boolean)
+                .join(" · ")}  
+            </p>
+          )}
               <p className="mt-4 text-lg text-gray-700">{resume.summary}</p>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold border-b pb-2">About</h2>
-              <p className="mt-4 text-lg text-gray-700">{resume.about}</p>
-            </div>
+            {resume.about && (
+              <div>
+                <h2 className="text-3xl font-bold border-b pb-2">About</h2>
+                <p className="mt-4 text-lg text-gray-700">{resume.about}</p>
+              </div>
+            )}
+            {Array.isArray(resume.skills) && resume.skills.length > 0 && (
+              <div>
+                <h2 className="text-3xl font-bold border-b pb-2">Skills</h2>
+                <ul className="mt-4 list-disc list-outside ml-6 space-y-2 text-gray-700 skills-list">
+                  {resume.skills.map((skill, i) => (
+                    <li key={i}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h2 className="text-3xl font-bold border-b pb-2">Experience</h2>
-              <div className="mt-8 space-y-12">
+              <div className="mt-6 space-y-10">
                 {resume.experience.map((job, index) => (
-                  <div key={index} className="flex space-x-6">
-                    <div className="flex-shrink-0">
+                  <article key={index} className="">
+                    <div className="flex items-center gap-3">
                       {job.logo ? (
-                        <Image
-                          src={job.logo}
-                          alt={`${job.company} logo`}
-                          width={48}
-                          height={48}
-                          className="rounded-md"
-                        />
+                        <span className="resume-logo rounded-md ring-1 ring-gray-200 overflow-hidden">
+                          <Image
+                            src={job.logo}
+                            alt={`${job.company} logo`}
+                            width={56}
+                            height={56}
+                            className="rounded-md"
+                          />
+                        </span>
                       ) : (
-                        <div className="w-12 h-12 bg-gray-200 rounded-md"></div>
+                        <div className="resume-logo bg-gray-100 rounded-md ring-1 ring-gray-200"></div>
                       )}
-                    </div>
-                    <div className="flex-grow">
-                      <h3 className="text-2xl font-semibold">{job.company}</h3>
-                      <p className="text-lg text-gray-600">{job.title}</p>
-                      <p className="text-sm text-gray-500">
-                        {job.dates} &middot; {job.location}
-                      </p>
-                      <div className="mt-4 text-gray-700 space-y-2">
-                        {Array.isArray(job.description) ? (
-                          <ul className="list-disc list-inside space-y-2">
-                            {job.description.map((item, i) => {
-                              const hnLink =
-                                "https://news.ycombinator.com/item?id=33801314";
-                              if (item.includes(hnLink)) {
-                                const parts = item.split(hnLink);
-                                return (
-                                  <li key={i}>
-                                    {parts[0]}
-                                    <a
-                                      href={hnLink}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="underline"
-                                    >
-                                      {hnLink}
-                                    </a>
-                                    {parts[1]}
-                                  </li>
-                                );
-                              }
-                              return <li key={i}>{item}</li>;
-                            })}
-                          </ul>
-                        ) : (
-                          <p>{job.description}</p>
-                        )}
+                      <div>
+                        <h3 className="text-2xl font-semibold leading-tight">{job.company}</h3>
+                        <p className="text-lg text-gray-600">{job.title}</p>
+                        <p className="text-sm text-gray-500">
+                          {job.dates} &middot; {job.location}
+                        </p>
                       </div>
                     </div>
-                  </div>
+                    <div className="mt-3 text-gray-700">
+                      {Array.isArray(job.description) ? (
+                        <ul className="list-disc list-outside ml-5 space-y-1.5 experience-bullets">
+                          {job.description.map((item, i) => {
+                            const hnLink =
+                              "https://news.ycombinator.com/item?id=33801314";
+                            if (item.includes(hnLink)) {
+                              const parts = item.split(hnLink);
+                              return (
+                                <li key={i}>
+                                  {parts[0]}
+                                  <a
+                                    href={hnLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline"
+                                  >
+                                    {hnLink}
+                                  </a>
+                                  {parts[1]}
+                                </li>
+                              );
+                            }
+                            return <li key={i}>{item}</li>;
+                          })}
+                        </ul>
+                      ) : (
+                        <p>{job.description}</p>
+                      )}
+                    </div>
+                  </article>
                 ))}
               </div>
             </div>
+            {Array.isArray(resume.education) && resume.education.length > 0 && (
+              <div>
+                <h2 className="text-3xl font-bold border-b pb-2">Education</h2>
+                <div className="mt-6 space-y-10">
+                  {resume.education.map((edu, i) => (
+                    <article key={i}>
+                      <div className="flex items-center gap-3">
+                        {edu.logo ? (
+                          <span className="resume-logo rounded-md ring-1 ring-gray-200 overflow-hidden">
+                            <Image
+                              src={edu.logo}
+                              alt={`${edu.school} logo`}
+                              width={48}
+                              height={48}
+                              className="rounded-md"
+                            />
+                          </span>
+                        ) : (
+                          <div className="resume-logo bg-gray-100 rounded-md ring-1 ring-gray-200"></div>
+                        )}
+                        <div>
+                          <h3 className="text-2xl font-semibold leading-tight">{edu.school}</h3>
+                          <p className="text-lg text-gray-600">
+                            {(edu.degree ? edu.degree : "")}
+                            {edu.degree && edu.field ? ", " : ""}
+                            {(edu.field ? edu.field : "")}
+                          </p>
+                          <p className="text-sm text-gray-500">
+                            {(edu.dates ? edu.dates : "")}
+                            {edu.dates && edu.location ? " · " : ""}
+                            {(edu.location ? edu.location : "")}
+                          </p>
+                        </div>
+                      </div>
+                      {Array.isArray((edu as any).coursework) && (edu as any).coursework.length > 0 && (
+                        <p className="mt-3 text-gray-700">
+                          <span className="font-medium">Coursework:</span> {(edu as any).coursework.join(", ")}
+                        </p>
+                      )}
+                      {Array.isArray(edu.papers) && edu.papers.length > 0 && (
+                        <ul className="mt-3 list-disc list-outside ml-5 space-y-1.5 text-gray-700">
+                          <li className="font-medium">Notable papers:</li>
+                          {edu.papers.map((paper, j) => (
+                            <li key={j}>{paper}</li>
+                          ))}
+                        </ul>
+                      )}
+                      {Array.isArray(edu.activities) && edu.activities.length > 0 && (
+                        <ul className="mt-3 list-disc list-outside ml-5 space-y-1.5 text-gray-700">
+                          {edu.activities.map((act, j) => (
+                            <li key={j}>{act}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              </div>
+            )}
           </main>
         </div>
       </div>
@@ -208,22 +343,3 @@ export default function ResumePage() {
   );
 }
 
-// Modify the description for Patterns to handle the link correctly
-const patternsJob = resume.experience.find(
-  (job) => job.company === "Patterns"
-);
-if (patternsJob) {
-  const hnString = "on HackerNews";
-  const fullDescription = (patternsJob.description as string[]).find((d) =>
-    d.includes(hnString)
-  );
-
-  if (fullDescription) {
-    const index = (patternsJob.description as string[]).indexOf(
-      fullDescription
-    );
-    (patternsJob.description as string[])[
-      index
-    ] = `In Nov 2022, pivoted to orchestrating LLM tasks and launched our first product, an agent builder, on HackerNews the same day as ChatGPT's release.`;
-  }
-} 

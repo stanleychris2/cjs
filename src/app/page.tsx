@@ -7,7 +7,7 @@ export default function Home() {
         <header className="flex justify-between items-center py-8">
           <h1 className="text-2xl font-bold">Chris Stanley</h1>
           <nav>
-            <Link href="/resume" className="hover:underline">Resume</Link>
+            <Link href="/resume" className="hover:underline">CV</Link>
           </nav>
         </header>
 
