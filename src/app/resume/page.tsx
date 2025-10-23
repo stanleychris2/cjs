@@ -2,7 +2,45 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const resume = {
+type ResumeContact = {
+  location?: string;
+  phone?: string;
+  email?: string;
+  website?: string;
+};
+
+type Education = {
+  school: string;
+  logo?: string;
+  degree?: string;
+  field?: string;
+  dates?: string;
+  location?: string;
+  papers?: string[];
+  coursework?: string[];
+  activities?: string[];
+};
+
+type Experience = {
+  company: string;
+  logo?: string;
+  title: string;
+  dates?: string;
+  location?: string;
+  description: string[] | string;
+};
+
+type Resume = {
+  name: string;
+  summary: string;
+  contact?: ResumeContact;
+  about?: string;
+  skills: string[];
+  education: Education[];
+  experience: Experience[];
+};
+
+const resume: Resume = {
   name: "Chris Stanley",
   summary:
     "Technical operator and founder with 15 years building intelligent data systems and AI products that automate and augment decision-making. I ship end-to-end across code, design, GTM, and leadership. Focused on driving AI adoption and measurable business impact in the enterprise.",
@@ -311,9 +349,9 @@ export default function ResumePage() {
                           </p>
                         </div>
                       </div>
-                      {Array.isArray((edu as any).coursework) && (edu as any).coursework.length > 0 && (
+                      {Array.isArray(edu.coursework) && edu.coursework.length > 0 && (
                         <p className="mt-3 text-gray-700">
-                          <span className="font-medium">Coursework:</span> {(edu as any).coursework.join(", ")}
+                          <span className="font-medium">Coursework:</span> {edu.coursework.join(", ")}
                         </p>
                       )}
                       {Array.isArray(edu.papers) && edu.papers.length > 0 && (
